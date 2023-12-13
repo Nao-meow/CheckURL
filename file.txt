@@ -1,2 +1,1 @@
 true
-https://raw.githubusercontent.com/Nao-meow/CheckURL/main/al.txt
