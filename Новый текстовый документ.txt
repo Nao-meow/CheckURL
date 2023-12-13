@@ -1,0 +1,43 @@
+import socket
+
+def send_file(file_path, ip, port, save_location):
+    # Открываем файл для чтения в бинарном режиме
+    try:
+        with open(file_path, 'rb') as file:
+            file_data = file.read()
+    except FileNotFoundError:
+        print(f"Файл '{file_path}' не найден.")
+        return
+    except Exception as e:
+        print(f"Произошла ошибка при чтении файла: {e}")
+        return
+
+    # Создаем сокет
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    try:
+        # Устанавливаем соединение с указанным IP и портом
+        s.connect((ip, port))
+
+        # Отправляем размер файла
+        file_size = len(file_data).to_bytes(8, byteorder='big')
+        s.sendall(file_size)
+
+        # Отправляем данные файла
+        s.sendall(file_data)
+
+        # Получаем ответ от сервера (если необходимо)
+        response = s.recv(1024)
+        print(response.decode())
+
+        # Закрываем соединение
+        s.close()
+
+        print(f"Файл '{file_path}' успешно передан на {ip}:{port} и сохранен в {save_location}")
+    except ConnectionRefusedError:
+        print(f"Не удалось подключиться к {ip}:{port}. Проверьте правильность IP и порта.")
+    except Exception as e:
+        print(f"Произошла ошибка при передаче файла: {e}")
+
+# Пример использования функции send_file
+send_file('путь_к_файлу', '192.168.0.188:21', порт, 'D:/')
