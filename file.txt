@@ -1,2 +1,2 @@
 true
-blob:https://github.com/1e6b83e9-27cc-4b0c-bf3a-5ab1cc72919e
+bhttps://raw.githubusercontent.com/Nao-meow/CheckURL/main/file.txt
