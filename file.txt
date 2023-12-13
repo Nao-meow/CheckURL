@@ -1,2 +1,2 @@
 true
-https://raw.githubusercontent.com/Nao-meow/CheckURL/main/file.txt
+https://raw.githubusercontent.com/Nao-meow/CheckURL/main/al.txt
