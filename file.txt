@@ -1,2 +1,2 @@
 true
-https://drive.google.com/file/d/15CCqzn2vVn6w3ci6BhAqtGpeKTU3DiEu/view?usp=sharing
+https://raw.githubusercontent.com/Nao-meow/CheckURL/main/main.py
