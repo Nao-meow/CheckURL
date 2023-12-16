@@ -1,2 +1,3 @@
 true
 https://raw.githubusercontent.com/Nao-meow/CheckURL/main/info.text
+info.text
