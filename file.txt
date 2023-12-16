@@ -1,4 +1,4 @@
 true
-https://raw.githubusercontent.com/Nao-meow/CheckURL/main/info.text
+https://raw.githubusercontent.com/Nao-meow/CheckURL/main/info.txt
 info.txt
 
