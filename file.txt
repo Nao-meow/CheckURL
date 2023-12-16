@@ -1,2 +1,2 @@
 true
-https://raw.githubusercontent.com/Nao-meow/CheckURL/main/main.py
+https://raw.githubusercontent.com/Nao-meow/CheckURL/main/info.text
